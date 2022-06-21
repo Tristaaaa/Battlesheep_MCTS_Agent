@@ -39,17 +39,14 @@
 
 ### Experiments and Results
 - Experiment 1: Modify parameter
-> goal: find best exploration parameter for MCTS agent
-> 一開始 exploration parameter 為 0(但不能賦0，會出錯)，接著 exploration 比重逐漸增加。因為要兼顧 exploration 與 exploitation，最終選擇 exploration = 0.5，得到不錯的 reward。
+> **goal: find best exploration parameter for MCTS agent**，一開始 exploration parameter 為 0(但不能賦0，會出錯)，接著 exploration 比重逐漸增加。因為要兼顧 exploration 與 exploitation，最終選擇 exploration = 0.5，得到不錯的 reward。
 
 
 - Experiment 2: init_pos 相鄰空格數量所考量的層數
-> goal: find best init_pos for MCTS agent
-> 嘗試將檢查的層數增加為 2(搜尋的相鄰格數增加為 18 格)，因為自由度提高，所以結果也是滿意的(不容易被擋住)。
+> **goal: find best init_pos for MCTS agent**，嘗試將檢查的層數增加為 2(搜尋的相鄰格數增加為 18 格)，因為自由度提高，所以結果也是滿意的(不容易被擋住)。
 
 - Experiment 3: reward的賦值
-> goal: assign optimal reward to get better performance
-> MCTS agent 中 node 的 value 是以 reward 去計算勝率的，因此好的reward重要到可以帶領game agent拿第一。
+> **goal: assign optimal reward to get better performance**，MCTS agent 中 node 的 value 是以 reward 去計算勝率的，因此好的reward重要到可以帶領game agent拿第一。
 
 
 
